@@ -25,7 +25,7 @@
             id="quote"
             value="quote"
           />
-          <label>A QUOTE!</label>
+          <label class="labelBullet">A QUOTE!</label>
           <div class="bullet">
             <div class="line zero"></div>
             <div class="line one"></div>
@@ -45,7 +45,7 @@
             id="proverb"
             value="proverb"
           />
-          <label>A PROVERB !</label>
+          <label class="labelBullet">A PROVERB !</label>
           <div class="bullet">
             <div class="line zero"></div>
             <div class="line one"></div>
@@ -75,13 +75,13 @@
     </form>
     <div id="result">?</div>
 
-    <form id="add-message-form" >
-      <label for="choice-type-message" >Select type of message </label>
+    <form id="add-message-form" autocomplete="off">
+      <label for="choice-type-message" >Select the type of message </label>
       <select id="choice-type-message">
         <option value="quote">Quote</option>
         <option value="proverb">Proverb</option>
       </select>
-      <label for="message-content">Enter message</label>
+      <label for="message-content">And enter your message</label>
       <input type="text" id="message-content" />
 
       <input type="submit" value="Valider" id="validInputMessage"/>
@@ -94,6 +94,6 @@
       <span id="button-Display-Appear"></span>
     </form>
     </div>
-    <script src="index.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

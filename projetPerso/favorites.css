@@ -2,5 +2,61 @@ body {
   background-color: lightgray;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
+}
+
+#fav-list {
   list-style-position: inside;
+  margin-top: 5rem;
+  color: white;
+
+  margin: 0 20px;
+  display: inline-block;
+  background-color: gray;
+  border-radius: 25px;
+  padding: 20px;
+  width: 25rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+#homepage {
+  color: white;
+
+  background-color: gray;
+  border-radius: 25px;
+  margin-bottom: 3rem;
+  width: 15rem;
+  height: 3rem;
+  font-size: 1.2rem;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #homepage {
+   
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    background-color: gray;
+    border-radius: 25px;
+
+    width: 15rem;
+
+    font-size: 1.2rem;
+    flex-direction: column;
+  }
+ 
 }

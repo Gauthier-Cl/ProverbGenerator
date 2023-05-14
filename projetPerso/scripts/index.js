@@ -95,6 +95,8 @@ btnDelete.addEventListener("click", () => {
   btnDelete.disabled = true;
   proverbRadio.checked = false;
   quoteRadio.checked = false;
+  document.getElementById("button-Fav-Appear").innerHTML ="";
+  document.getElementById("button-Display-Appear").innerHTML ="";
 });
 
 addMessageForm.addEventListener("submit", (event) => {
@@ -108,7 +110,9 @@ addMessageForm.addEventListener("submit", (event) => {
     type: document.getElementById("choice-type-message").value,
     message: document.getElementById("message-content").value,
     id: Math.max(...data.map((msg) => msg.id)) + 1,
+    
   };
+   btnDelete.disabled = false;
   data.push(newMessage);
   messageContent.value = "";
   textarea.innerText = newMessage.message;
