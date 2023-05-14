@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="radio.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <header>
+    <h1>Proverb generator</h1>
+  </header>
+
+  <body>
+    <h3 id="question">Would you like to see a quote or a proverb?</h3>
+    <form method="post">
+      <ul>
+        <li>
+          <input
+            type="radio"
+            name="1"
+            class="required"
+            id="quote"
+            value="quote"
+          />
+          <label>A QUOTE!</label>
+          <div class="bullet">
+            <div class="line zero"></div>
+            <div class="line one"></div>
+            <div class="line two"></div>
+            <div class="line three"></div>
+            <div class="line four"></div>
+            <div class="line five"></div>
+            <div class="line six"></div>
+            <div class="line seven"></div>
+          </div>
+        </li>
+        <li>
+          <input
+            type="radio"
+            class="required"
+            name="1"
+            id="proverb"
+            value="proverb"
+          />
+          <label>A PROVERB !</label>
+          <div class="bullet">
+            <div class="line zero"></div>
+            <div class="line one"></div>
+            <div class="line two"></div>
+            <div class="line three"></div>
+            <div class="line four"></div>
+            <div class="line five"></div>
+            <div class="line six"></div>
+            <div class="line seven"></div>
+          </div>
+        </li>
+      </ul>
+      <div id="buttons">
+        <button
+          onclick="myFilter()"
+          
+          type="button"
+          id="submitButton"
+          class="validButton"
+        >
+          See my message
+        </button>
+        <button type="button" id="deleteButton" class="deleteButton">
+          Clear
+        </button>
+      </div>
+    </form>
+    <div id="result">?</div>
+
+    <form id="add-message-form" >
+      <label for="choice-type-message" >Select type of message </label>
+      <select id="choice-type-message">
+        <option value="quote">Quote</option>
+        <option value="proverb">Proverb</option>
+      </select>
+      <label for="message-content">Enter message</label>
+      <input type="text" id="message-content" />
+
+      <input type="submit" value="Valider" id="validInputMessage"/>
+    </form>
+    <div class="row">
+    <form id="add-fav-form" >
+      <span id="button-Fav-Appear"></span>
+    </form>
+    <form id="display-fav" >
+      <span id="button-Display-Appear"></span>
+    </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
