@@ -11,7 +11,7 @@ li {
   height: 30px;
 }
 
-label:before {
+.labelBullet:before {
   content: "";
   width: 15px;
   height: 15px;
