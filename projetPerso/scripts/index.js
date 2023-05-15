@@ -57,6 +57,23 @@ let currentDisplayedMsg;
 
 const myFilter = () => {
   if (quoteRadio.checked) {
+    // When you code twice the same thing (here between lines 61 to 70 and 73 to 82
+    // It is worth writing a new function using parameters if needed.
+    /*
+      const displayMsg = (values) => {
+        const arrayIndex = Math.floor(Math.random() * quoteValue.length);
+        document.getElementById("result").innerText =
+          values[arrayIndex].message;
+        currentDisplayedMsg = values[arrayIndex];
+        document.getElementById("button-Fav-Appear").innerHTML =
+          '<button id="add-to-favorite" >Add to favorite</button>';
+
+        document.getElementById("button-Display-Appear").innerHTML =
+          '<a href="favorites.html">Display Favorites</a>';
+      }
+      
+      This way you can reuse it.
+    */
     const quoteValue = data.filter((item) => item.type === "quote");
     const arrayIndex = Math.floor(Math.random() * quoteValue.length);
     document.getElementById("result").innerText =
